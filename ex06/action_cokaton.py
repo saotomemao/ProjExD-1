@@ -1,4 +1,3 @@
-import tkinter as tk
 import pygame as pg
 import sys
 from random import randint
