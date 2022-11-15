@@ -23,7 +23,6 @@ class Gamefinish:
     def blit(self):
         self.sfc.blit(self.go_sfc, self.go_rct)
 
-
 def check_bound(obj_rct, scr_rct):
     yoko = +1
     if obj_rct.left < scr_rct.left or scr_rct.right < obj_rct.right or (200 < obj_rct.right and obj_rct.bottom > 370) or (350 < obj_rct.right and obj_rct.bottom > 320) or (500 < obj_rct.right and obj_rct.bottom > 270): 
@@ -49,7 +48,6 @@ def game_over():
     pg.display.update()
     clock = pg.time.Clock()
     clock.tick(0.2)
-
 
 def main():
     global gr, vy, canJump, Ground, check_clear
